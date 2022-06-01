@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  "#loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>   
+
+<title>Thank You For Registering In FruitFul Care</title>
+</head>
+
+<style>
+
+#loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+          
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+          
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+ h1, h2 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+ body {
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	box-sizeing: border-box;
+	background-image: url(./Resources/zz.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+ img {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-left: 340px;
+	margin-right: 0px;
+}
+
+div {
+	background-color: black;	
+	text-color: white;
+	font-size: 25px;
+	text-align: center;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom:0px;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: aquamarine;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+</style>
+<body>
+<div id="loader" class="center" style="color: black-"></div>
+<br>
+<img src="./Resources/tick.jpg" height"350px" width="350px" alt="Confirmation 'Green Tick'">
+
+<h1 style="text-align: center"><big>Response Recieved Successfully</big></h1>
+<h2 style="text-align: center"><big>Thank You For Visiting Fruitful Care</big></h2>
+<p style="text-align: center">&copy; FruitFul Care</p>
+<br>
+<br>
+
+<div>
+<a href="index.html">
+Click here to go back to the Home Page...
+</a>
+</div>
+
+<br><br>
+</body>
+</html>

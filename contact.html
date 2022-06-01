@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  "#loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>   
+
+<title>FruitFul Care - Contact Us</title>
+
+<style>
+
+#loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+          
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+          
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+ h1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 28px;
+	align: center;	
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	box-sizing: border-box;
+	background-image: url(./Resources/kkp.jpg);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+}
+
+form {
+	 box-sizing: border-box;
+	 width: 475px;
+	 margin-left: 275px;
+	 margin-right: 0px;
+	 text-align: center; 
+	 padding: 20px;
+	 text-transform: capitalize;
+	 background-image: url(./Resources/kk.jpg);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+ }
+
+ label {
+	font-size: 20px;
+	font-weight: 900;
+	color: red;
+}
+
+ input.b {
+	margin-right: 0px;
+	font-weight: 700;
+	font-size: 25px;
+ }
+
+
+</style>
+
+</head>
+
+<body>
+<div id="loader" class="center" style="color: black-"></div>
+<div style="background-color: rgb(250, 191, 222); font-weight:900; margin-left: 380px; margin-right: 380px;">
+<h1 align="center" style="color: rgb(66, 23, 221);"><u>Leave A Reply</u></h1>
+</div>
+<br>
+
+<form action="success.html" method="post" autocomplete="on">
+
+<br>
+<label for"name"> 
+<b><u>Your Name</u></b></label><br>
+
+<br>
+<input type="text" id="name" name="name" required>
+<br>
+<br>
+
+<label for"email"> 
+<b><u>Email Address</u></b></label><br>
+
+<br>
+<input type="text" id="email" name="email" required>
+<br>
+<br><br>
+
+<label for="res"> 
+<b><u>Your Response</b></u></label><br>
+
+<br>
+<textarea name="res" rows="8" cols="40">
+</textarea> 
+<br><br><br>
+
+<input class="b" type="submit" value="Submit" style="color:#32CD32; font-size:20px">
+
+</form>
+
+<br><br>
+
+</body>
+</html>
+
+
